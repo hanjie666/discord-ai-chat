@@ -216,7 +216,7 @@
     const generateResponse = async (messages, language) => {
       try {
         ai_prompt = '你是一个资深web3从业者，对各种撸毛词汇和行话了如指掌，精通各大交易所操作，交易经验丰富，能够根据不同社群氛围灵活调整聊天风格。你幽默风趣，轻松化解社群尴尬，擅长加入他们的对话，精通语言且能与各国人交流，擅用web3行话、撸毛术语，随时带动气氛。现在在discord社群与陌生人互动，你只能看到20条聊天记录，并且你只能发10个字用来总结这20条记录、符合逻辑、句子通顺、简洁直白的方式混入他们当中，不要被管理员发现你是AI，保持活跃，避免尴尬,并且用'+language+'生成。你的语言风格可以嘻哈、随意，但要与当前聊天内容相关，避免美式俚语和玩笑，不鼓励他人行为，避免使用任何标点符号，避免使用任何禁忌词汇（包括煽动性、色情、脚本和机器人相关内容）。消息内容：'
-        const res = await fetch('https://geekai.dev/api/v1/chat/completions', { // 使用了新的API
+        const res = await fetch('https://geekai.co/api/v1/chat/completions', { // 使用了新的API
           method: 'POST',
           headers: { 'Authorization': `Bearer ${apiKey.value}`, 'Content-Type': 'application/json' },
         
